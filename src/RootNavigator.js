@@ -4,14 +4,32 @@ import Details from './component/Details';
 
 const Routes = createStackNavigator({
     contacts: {
-        screen: Contacts
+        screen: Contacts,
+        navigationOptions: {
+            title: 'Contact',
+            headerStyle: {
+                backgroundColor: '#f4511e'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold'
+            }
+        }
     },
     details: {
-        screen: Details
+        screen: Details,
+        navigationOptions: {
+            title: 'Details',
+            headerStyle: {
+                backgroundColor: '#f4511e'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+                padding: 'auto'
+            }
+        }
     }
-},
-{
-    headerMode: 'none'
 }
 );
 

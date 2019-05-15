@@ -1,5 +1,9 @@
 import { combineReducers } from 'redux';
 
+import ContactsReducer from './ContactsReducer';
+import SelectionReducer from './SelectionReducer';
+
 export default combineReducers({
-    contacts: () => []
+    contacts: ContactsReducer,
+    selection: SelectionReducer
 });
